@@ -1,13 +1,24 @@
-import React from 'react';
-import  Navbar  from './components/navbar/Navbar';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import "./App.scss";
+import {routes} from '../src/routes/index';
 
 function App() {
   return (
-    <div className="container">
-      <Navbar />
-      <h1>ন দীর্ঘ ঈ কার এ আপনাকে স্বাগতম</h1>
-    </div>
+<div className="App">
+        <Router>
+          <Switch>
+            {routes.map((route, i) => (
+              <Route
+                exact
+                path={route.path}
+                component={route.component}
+                key={i}
+              />
+            ))}
+          </Switch>
+        </Router>
+      </div>
   );
 }
 

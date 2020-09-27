@@ -1,0 +1,25 @@
+.slider-section {
+    height: 330px;
+    background: rgb(253, 167, 200);
+
+    .slick-slider {
+      height: 100%;
+      .slick-prev,
+      .slick-next {
+        &::before {
+          color: hotpink;
+        }
+      }
+      .slick-list {
+        height: 100%;
+        .slick-track {
+          .slick-slide {
+            .slide-image {
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+
+  }
