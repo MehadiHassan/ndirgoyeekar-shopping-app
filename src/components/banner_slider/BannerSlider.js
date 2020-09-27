@@ -18,13 +18,13 @@ const BannerSlider = () => {
     return (
         <div className="slider-section">
           <Slider {...settings}>
-            <div>
+            <div className="slider-content">
               <img className="slide-image" src={SliderImageOne} alt="one" />
             </div>
-            <div>
+            <div className="slider-content">
               <img className="slide-image" src={SliderImageTwo} alt="two" />
             </div>
-            <div>
+            <div className="slider-content">
               <img
                 className="slide-image"
                 src={SliderImageThree}

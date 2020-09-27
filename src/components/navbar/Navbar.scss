@@ -20,3 +20,10 @@
         }
     }
 }
+
+@media only screen and (max-width: 724px) {
+    .shopping-app-navbar {
+        width: 100%;
+        left: 0px;
+    }
+}

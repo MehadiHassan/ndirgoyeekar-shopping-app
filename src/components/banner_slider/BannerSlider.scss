@@ -23,3 +23,31 @@
     }
 
   }
+
+  @media only screen and (max-width:724px) {
+    .slider-section {
+      height: 200px;
+
+      .slick-slider {
+
+        .slick-list {
+          height: 100%;
+          .slick-track {
+            .slick-slide {
+              .slider-content {
+                  height: 200px;
+                .slide-image {
+                    margin: auto;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                  }
+              }
+
+            }
+          }
+        }
+      }
+  
+    }
+}
